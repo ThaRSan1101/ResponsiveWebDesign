@@ -1,0 +1,134 @@
+/* Reset default box model and remove spacing */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overall body styling */
+ body{
+    font-family: 'Segoe UI' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00001d;
+    color: #f0f0f5;
+    padding: 20px;
+    line-height: 1.6;
+ }
+
+/* Form wrapper styling */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: hsl(240,26%,16%);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(228,233,231,0.4);
+    animation: fadeInContainer 1s ease-out forwards;
+}
+
+/* Fade animation for the container */
+@keyframes fadeInContainer{
+    from{
+        transform: scale(0.99);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* Heading style */
+h1{
+    text-align: center;
+    color: #f0f0f5;
+    margin-bottom: 10px;
+}
+
+/* Subheading text */
+p.subtext{
+    text-align: center;
+    font-style: italic;
+    color: #f0f0f5;
+    margin-bottom: 30px;
+}
+
+/* Label styling */
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Styling input, select, textarea elements */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f0fff5;
+    color: #1a3c2f;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+input:hover,
+select:hover,
+textarea:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(40, 43, 40, 0.3); 
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #350813;
+}
+
+/* Submit button styling */
+.submit-btn{
+    background-color: transparent;
+    color: #f0f0f5;
+    padding: 12px;
+    width: 100%;
+    border: 2px solid #5c645d;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+    background-color: #696e6a;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(204, 223, 205, 0.4);
+}
+
+/* Radio and checkbox styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+  transform: scale(1.3);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+}
+  
