@@ -7,18 +7,22 @@
     outline: none;
     font-family: 'Poppins', sans-serif;
   }
-  
+
+  /*-- HTML --*/
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
   
+  /*-- Body --*/
   body {
     width: 100%;
     background-color: black;
     color: white;
   }
   
+
+  /*-- Hrader Part --*/
   header {
     margin-top: 20px;
     position: fixed;
@@ -50,7 +54,7 @@
     color: white;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     border-bottom: 3px solid transparent;
   }
   
@@ -73,10 +77,6 @@
       border-bottom-right-radius: 2rem;
     }
   
-    nav.active {
-      display: block;
-    }
-  
     nav a {
       display: block;
       font-size: 2rem;
@@ -84,19 +84,21 @@
     }
   }
   
+  /*-- Section Intro --*/
   section {
     width: 100%;
-    min-height: 100vh;
-    padding: 8rem 9% 5rem;
+    padding: 5rem 5% 5rem;
   }
   
-  .home {
+/*-- Home Section --*/
+  .home-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 6rem;
     text-align: center;
+    margin-top: 50px;
   }
   
   .home-content h1 {
@@ -194,10 +196,16 @@
     100% { content: "Full-Stack Developer"; }
   }
   
-  /* Services Grid */
+ /*-- Service Section --*/
+ .services-section h2{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 25px;
+ }
+
   .Services-grid {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     flex-wrap: wrap;
   }
   
@@ -206,10 +214,57 @@
     border-radius: 1rem;
     padding: 2rem;
     flex: 1;
-    min-width: 250px;
+    min-width: 350px;
+    transition: 0.5s ease;
+    border: 1px solid #1c1c1c;
+    box-shadow: 0 0 15px #5c5a5a;
+  }
+
+  .Services-card:hover{
+    box-shadow: #b74b4b;
+  }
+
+  .Services-card:hover{
+    transform: scale(1.05);
   }
   
-  /* Skills Progress */
+  .Services-card h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    color: #b74b4b;
+  }
+
+  .Services-card img{
+      width: 100%;
+      height: 20vh;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+  }
+  .services-section p{
+    font-size: 15px;
+  }
+  .services-section .services-tech{
+    text-align: right;
+  }
+
+   /*-- skills-education-section --*/
+  .skills-education-section{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  /*-- Skills Section --*/
+  .skills-section{
+    width: 50%;
+  }
+  .skills-section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 25px;
+   }
+
   .skill-bar label {
     font-size: 1.6rem;
     margin-top: 1rem;
@@ -230,8 +285,28 @@
     text-align: right;
     padding-right: 1rem;
   }
+
+  /*-- education Section --*/
+
+  .education-section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 25px;
+   }
   
+   .education-section div{
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 1rem;
+   }
+
+
   /* Projects Section */
+  .projects-section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 25px;
+   }
   .projects {
     display: flex;
     flex-wrap: wrap;
